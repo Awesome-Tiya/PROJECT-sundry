@@ -187,8 +187,8 @@ def color_effect():
 
     if "1" == col or "green" == col.lower():
         plt.subplot(1, 1, 1)
-        window_name = "image"
-        cv2.imshow(window_name, green_demo)
+        # window_name = "image"
+        # cv2.imshow(window_name, green_demo)
         # this line is commented
         # because it does not open
         # a window at vs code codespace.
@@ -201,8 +201,8 @@ def color_effect():
         return jsonify({"image_url": f"/{name1}"})
     elif "2" == col or "blue" == col.lower():
         plt.subplot(1, 1, 1)
-        window_name = "image"
-        cv2.imshow(window_name, blue_demo)
+        # window_name = "image"
+        # cv2.imshow(window_name, blue_demo)
         # this line is commented
         # because it does not open
         # a window at vs code codespace.
@@ -215,8 +215,8 @@ def color_effect():
         return jsonify({"image_url": f"/{name1}"})
     elif "3" == col or col.lower() in ["grey", "gray"]:
         plt.subplot(1, 1, 1)
-        window_name = "image"
-        cv2.imshow(window_name, grey_demo)
+        # window_name = "image"
+        # cv2.imshow(window_name, grey_demo)
         # this line is
         # commented because it
         # does not open a window at vs code codespace.
@@ -229,8 +229,8 @@ def color_effect():
         return jsonify({"image_url": f"/{name1}"})
     elif "4" == col or "purple" == col.lower():
         plt.subplot(1, 1, 1)
-        window_name = "image"
-        cv2.imshow(window_name, purple_demo)
+        # window_name = "image"
+        # cv2.imshow(window_name, purple_demo)
         # this line is commented
         # because it does
         # not open a window at vs code codespace.
