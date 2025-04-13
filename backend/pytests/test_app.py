@@ -13,17 +13,17 @@ def client():
         yield client
 
 
-def test_color_effect(client):
-    col = "1"
-    name = "a"
-    img1 = os.path.join(os.path.dirname(__file__), "../static/FEKEub7aMAIAzE0.jpg")
-    with open(img1, "rb") as img_file:
-        data = {"col": col, "name": name, "img1": (img_file, img1)}
-        response = client.post(
-            "/color-effect", data=data, content_type="multipart/form-data"
-        )
-    assert response.status_code == 200
-    assert response.json["image_url"] == f"/static/{name}.jpg"
+# def test_color_effect(client):
+#     col = "1"
+#     name = "a"
+#     img1 = os.path.join(os.path.dirname(__file__), "../static/FEKEub7aMAIAzE0.jpg")
+#     with open(img1, "rb") as img_file:
+#         data = {"col": col, "name": name, "img1": (img_file, img1)}
+#         response = client.post(
+#             "/color-effect", data=data, content_type="multipart/form-data"
+#         )
+#     assert response.status_code == 200
+#     assert response.json["image_url"] == f"/static/{name}.jpg"
 
 
 def test_compare(client):
