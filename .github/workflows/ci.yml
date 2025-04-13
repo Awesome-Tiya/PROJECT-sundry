@@ -31,4 +31,5 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest
+          mkdir -p backend/static
+          pytest -v backend/pytests/

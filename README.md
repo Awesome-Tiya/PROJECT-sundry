@@ -21,7 +21,7 @@ At first it will show a page with a tab menu of functions it can perform:
 - Other: Axios, CORS, Pillow, fuzzywuzzy, BeautifulSoup
 
 ## Folder Structure 
-PROJECT-sentry/
+PROJECT-sundry/
 ├── backend/          # Flask app and Python logic
 ├── frontend/         # Vue 3 + Vite frontend
 ├── .gitignore 
