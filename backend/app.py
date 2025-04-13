@@ -15,6 +15,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 import skimage
 import qrcode
+import os
 
 matplotlib.use("Agg")
 app = Flask(__name__)
@@ -73,7 +74,9 @@ def genqr():
         siteqr = qr.make_image(fill_color=color1, back_color=color2)
     else:
         siteqr = qrcode.make(site)
-    siteqr.save("static/siteqr.png")
+    # siteqr.save("static/siteqr.png")
+    static_path = os.path.join(app.root_path, "static", "siteqr.png")
+    siteqr.save(static_path)
     return jsonify(
         {"message": "QR Code saved as 'siteqr.png'", "image_url": "/static/siteqr.png"}
     )
