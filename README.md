@@ -60,7 +60,7 @@ PROJECT-sundry/frontend/src/assets/designs/
 # contributing? 
 
 Thank you for thinking to contribute. 
-If you want to contribute, fork the branch, make a different branch based on the main branch, make your changes, check if everything is working correctly, and then raise a pull request 
+If you want to contribute, fork the main branch (not master), make a different branch based on the main branch, make your changes, check if everything is working correctly, and then raise a pull request (to main, not master) 
 
 # possible debugs 
 - if showing any warnings related to python-Levenshtein and you don't want it, run: 
